@@ -1,0 +1,296 @@
+  /*CSS MercadoLiebre*/
+  
+  * {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      background-color: #ebebeb;
+      margin: 0 auto;
+  }
+  
+  .top-bar {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      align-content: baseline;
+      width: 100%;
+  }
+  
+  .logo {
+      width: 50%;
+      align-items: baseline;
+      margin-top: 10px;
+      flex-grow: 1
+  }
+  
+  .logo {
+      height: 44px;
+  }
+  
+  .logo h1 {
+      height: 100%;
+  }
+  
+  .search-bar {
+      display: flex;
+      flex-grow: 1
+  }
+  
+  .logo img {
+      height: 90%;
+  }
+  
+  .top-bar .search-bar {
+      position: relative;
+      margin-top: 10px;
+      width: 40%;
+  }
+  
+  .search-bar input {
+      border: white 1px solid;
+      border-radius: 4px;
+      height: 40px;
+      width: 400%;
+  }
+  
+  .search-bar #search {
+      background-color: white;
+  }
+  
+  .cuotas {
+      align-self: center;
+  }
+  
+  .cuotas h2 {
+      display: inline;
+  }
+  
+  main {
+      background-color: #ebebeb;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  .bottom-bar {
+      display: none;
+  }
+  
+  header {
+      width: 100%;
+  }
+  
+  .logo {
+      width: 150px;
+  }
+  
+  .offers h2 {
+      font-size: 24px;
+      color: #666;
+  }
+  
+  .titular-ultima-visita {
+      font-size: 24px;
+      color: #666;
+      text-align: left;
+      display: inline-block;
+  }
+  
+  .main-header {
+      background-color: #FFE600;
+      line-height: 30px;
+      padding-bottom: 10px;
+      position: fixed;
+  }
+  
+  .main-header h4 {
+      text-align: center;
+      margin-top: 15px;
+  }
+  
+  .precio-descuento {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+  }
+  
+  .precio-descuento p {
+      display: inline-block;
+  }
+  
+  #precio {
+      font-size: 18px;
+      width: 30%;
+  }
+  
+  #descuento {
+      font-size: 16px;
+      color: #39b54a;
+      flex-grow: 1;
+  }
+  
+  #descripcion {
+      font-size: 16px;
+      display: none;
+  }
+  
+  .banner {
+      width: 100%;
+  }
+  
+  article {
+      margin: 10px;
+      background-color: white;
+  }
+  
+  .detalle-producto {
+      border-top: 1px solid #ebebeb;
+      padding: 15px;
+      width: 100%;
+      text-align: left;
+      position: relative;
+  }
+  
+  .detalle-producto i {
+      display: block;
+      border: 1px solid #b53d39;
+      padding: 10px;
+      border-radius: 60%;
+      color: #67b539;
+      font-size: 16px;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      background-color: rgb(252, 248, 248);
+      position: absolute;
+      right: 20px;
+      top: -15px;
+      transition: 1s all;
+  }
+  
+  .detalle-producto i:hover {
+      transform: rotate(360deg)
+  }
+  
+  article img {
+      width: 60%;
+      text-align: center;
+  }
+  
+  .search-bar .lupa button {
+      height: 40px;
+      padding: 5px;
+      background-color: white;
+      border: none;
+      border-radius: 2px;
+  }
+  
+  ul {
+      padding: 0;
+  }
+  
+  ul li {
+      list-style: none;
+  }
+  
+  .burger-menu {
+      background-color: #1259c3;
+      color: white;
+      width: 50px;
+      height: 40px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 26px;
+      border-radius: 10%;
+  }
+  
+  footer {
+      text-align: center;
+  }
+  
+  footer i {
+      color: #1259c3;
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+  
+  @media(min-width:361px) {
+      #descripcion {
+          display: inline-block;
+      }
+      article {
+          box-shadow: 0px 0px 10px rgb(100, 100, 100);
+          width: 40%;
+          transition: transform 1s;
+      }
+      article:hover {
+          transform: scale(1.5);
+      }
+      .bottom-bar section {
+          width: 50%;
+      }
+      .bottom-menu {
+          display: flex;
+          justify-content: space-evenly;
+      }
+      .login-menu {
+          display: flex;
+          justify-content: space-evenly;
+          flex-grow: 1;
+      }
+      .login-menu i {
+          margin-left: 5px;
+      }
+      .articles {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+      .articles article {
+          width: 40%;
+      }
+      .precio-descuento {
+          flex-direction: column;
+      }
+  }
+  
+  @media(min-width:768px) {
+      .bottom-bar {
+          display: flex;
+          justify-content: space-between;
+          gap: 80px;
+      }
+      .burger-menu {
+          display: flow-root;
+      }
+      .articles article {
+          width: 20%;
+      }
+      .top-bar {
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 20px;
+      }
+      .top-bar .logo {
+          width: 30%;
+          margin-left: 5px;
+          height: 70px;
+      }
+      .search-bar {
+          width: 30%;
+          align-items: center;
+      }
+      .cuotas {
+          display: block;
+          margin-right: 5px;
+          width: 30%;
+      }
+      .main-header h4 {
+          width: 33%;
+      }
+  }
